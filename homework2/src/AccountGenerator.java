@@ -48,10 +48,10 @@ public class AccountGenerator {
         int myAge = (int) age%26+65;
         char ch = (char) myAge;
         String birthMonth = birthday.substring(0,2);
-        int bm = Integer.valueOf (birthMonth);
+        int bm = Integer.parseInt(birthMonth);
         String birthDate = birthday.substring(3,5);
-        int bd = Integer.valueOf (birthDate);
-        int by = Integer.valueOf (birthYear);
+        int bd = Integer.parseInt(birthDate);
+        int by = Integer.parseInt(birthYear);
         int sum = (bm + bd +by)%12;
 
 
