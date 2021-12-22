@@ -45,9 +45,8 @@ public class AccountGenerator {
         int lengthLast= lenLast/2;
         String halfLast = lastName.substring(lengthLast,lenLast);
 
-        int myAge = (int) age%26+17;
+        int myAge = (int) age%26+65;
         char ch = (char) myAge;
-        char nothing = (char) (ch+'0');
         String birthMonth = birthday.substring(0,2);
         int bm = Integer.valueOf (birthMonth);
         String birthDate = birthday.substring(3,5);
@@ -56,7 +55,7 @@ public class AccountGenerator {
         int sum = (bm + bd +by)%12;
 
 
-        System.out.println("The generated password is: " + halfFirst + halfLast + nothing + sum);
+        System.out.println("The generated password is: " + halfFirst + halfLast + ch + sum);
     }
 
 }
