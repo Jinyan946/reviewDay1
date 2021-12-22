@@ -36,7 +36,7 @@ public class AccountGenerator {
 
         String firstLetter = firstName.substring(0,1);
         String birthYear = birthday.substring(6,10);
-        System.out.println("The generated username is: "+ firstLetter + lastName + birthYear);
+        System.out.println(FINAL_USERNAME_SENTENCE + firstLetter + lastName + birthYear);
 
         int lenFirst = firstName.length();
         String halfFirst = firstName.substring (0, lenFirst/2);
@@ -55,7 +55,7 @@ public class AccountGenerator {
         int sum = (bm + bd +by)%12;
 
 
-        System.out.println("The generated password is: " + halfFirst + halfLast + ch + sum);
+        System.out.println(FINAL_PASSWORD_SENTENCE + halfFirst + halfLast + ch + sum);
     }
 
 }
